@@ -16,7 +16,9 @@ ActiveRecord::Schema[7.0].define(version: 2024_08_10_060055) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+end
 
+ActiveRecord::Schema[7.0].define(version: 2024_08_09_093414) do
   create_table "users", charset: "utf8", force: :cascade do |t|
     t.string "name", null: false
     t.string "email", default: "", null: false
