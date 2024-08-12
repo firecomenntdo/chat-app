@@ -9,14 +9,7 @@
 </div>
 
 <div class="messages">
-  <div class="message">
-    <div class="user-date">
-      <div class="username"></div>
-      <div class="date"></div>
-    </div>
-    <div class="chat-messege"></div>
-  </div>
-  
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <%= form_with model: [@room, @message], html: {class: "form"}, local: true do |f|%>
